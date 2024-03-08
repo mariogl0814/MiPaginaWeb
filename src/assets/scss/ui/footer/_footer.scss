@@ -1,0 +1,34 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.footer {
+    padding: 3rem;
+    background-color: v.$negro;
+
+    &__contenedor{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    @include m.tablet{
+        &__contenedor{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__texto {
+        background-color: v.$primario;
+        
+        &--parrafo {
+            color: v.$blanco;
+            text-align: center;
+        }
+    }
+
+    &__imagen {
+        width: 50rem;
+    }
+}

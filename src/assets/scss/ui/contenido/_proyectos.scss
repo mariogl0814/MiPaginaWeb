@@ -1,0 +1,42 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.proyectos {
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 4rem;
+        @include m.tablet { 
+            display: grid;
+            @include m.grid(2, 2rem);
+        }
+        @include m.desktop { 
+            @include m.grid(3, 2rem);    
+        }
+    }
+}
+
+.proyecto {
+    &__icontenedor {
+        overflow: hidden;
+        border-radius: 1rem;
+        position: relative;
+        &--imagen {
+            
+            aspect-ratio: 10 / 5;
+            transition: transform 0.5s ease;
+        
+            &:hover{
+                    transform: scale(1.5);
+            }
+        }
+    }
+
+    &__nombre {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+}

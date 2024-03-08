@@ -1,0 +1,35 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+
+.sociales {
+    background: linear-gradient(to bottom right, v.$primario, transparentize(v.$primario, 0.9));
+    margin-top: 5rem;
+    padding-bottom: 20rem;
+    padding-top: 10rem;
+    color: v.$blanco;
+
+    &__heading{
+        padding-bottom: 10rem;
+    }
+
+    &__lista {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    &__elemento{
+        height: 10rem;
+        width: 10rem;
+        transition: transform 0.5s ease;
+
+        img {
+            height: 100%;
+            width: 100%;
+            
+        }
+        &:hover{
+            transform: scale(1.5) rotate(-3deg);
+        }
+    }
+}
