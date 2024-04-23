@@ -10,12 +10,19 @@
         flex-direction: column;
     }
 
+    &__logo{
+        display: flex;
+        justify-content: center;
+    }
 
     @include m.tablet{
         &__contenedor{
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+        }
+        &__logo{
+            width: 20rem;
         }
     }
 

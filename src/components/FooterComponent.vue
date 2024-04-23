@@ -4,7 +4,7 @@
 <template>
     <footer class="footer">
         <div class="contenedor seccion footer__contenedor">
-            <div class="header__logo">
+            <div class="footer__logo">
                 <img src="../assets/img/logo.svg" alt="logo real state">
             </div>
 

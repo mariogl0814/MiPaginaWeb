@@ -6,6 +6,8 @@ import css from '../assets/img/icono_css.png'
 import javascript from '../assets/img/icono_javascript.png'
 import vue from '../assets/img/icono_vue.svg'
 import github from '../assets/img/icono_github.png'
+import angular from '../assets/img/icono_angular.svg'
+import laravel from '../assets/img/icono_laravel.svg'
 
 const destinos = ref([
     {
@@ -39,6 +41,14 @@ const destinos = ref([
     {
         nombre: 'Git',
         rutaImagen: github
+    },
+    {
+        nombre: 'Angular',
+        rutaImagen: angular
+    },
+    {
+        nombre: 'Laravel',
+        rutaImagen: laravel
     },
 
 ])
